@@ -8,4 +8,18 @@ class Account
   end
 
 
+  def deposit(amount)
+    update_account(amount)
+  end
+
+  def withdrawal(amount)
+    update_account(-amount)
+  end
+
+  private
+
+  def update_account(amount)
+    @balance += amount
+  end
+
 end

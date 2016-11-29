@@ -14,5 +14,22 @@ describe Account do
     end
   end
 
+  describe "#deposit" do
+
+    it "should increase the balance by the deposited amount" do
+    account.deposit(100)
+    expect(account.instance_variable_get(:@balance)).to eq 100
+    end
+  end
+
+  context "#withdrawal" do
+    it "should decrease the balance by the deposited amount" do
+    account.deposit(100)
+    p account.instance_variable_get(:@balance)
+    account.withdrawal(50)
+    expect(account.instance_variable_get(:@balance)).to eq 50
+    end
+  end
+
 
 end
