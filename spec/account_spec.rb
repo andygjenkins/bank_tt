@@ -1,8 +1,8 @@
 require 'account'
 
 describe Account do
-  subject(:account) { described_class.new(test: "test") }
-  subject(:account_two) { described_class.new(test: "test", opening_balance: 100)}
+  subject(:account) { described_class.new() }
+  subject(:account_two) { described_class.new(opening_balance: 100)}
 
   context "balance" do
     it "defaults to 0 if no opening balance is provided" do
@@ -22,11 +22,11 @@ describe Account do
     end
   end
 
-  context "#withdrawal" do
+  context "#withdraw" do
     it "should decrease the balance by the deposited amount" do
     account.deposit(100)
     p account.instance_variable_get(:@balance)
-    account.withdrawal(50)
+    account.withdraw(50)
     expect(account.instance_variable_get(:@balance)).to eq 50
     end
   end

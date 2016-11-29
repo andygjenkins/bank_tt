@@ -2,9 +2,8 @@ class Account
 
   DEFAULT_BALANCE = 0
 
-  def initialize(args)
+  def initialize(**args)
     @balance = args[:opening_balance] || DEFAULT_BALANCE
-    @test = args[:test]
   end
 
 
@@ -12,7 +11,7 @@ class Account
     update_account(amount)
   end
 
-  def withdrawal(amount)
+  def withdraw(amount)
     update_account(-amount)
   end
 

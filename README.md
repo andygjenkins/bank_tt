@@ -25,7 +25,7 @@ I should be a able to see an account statement
 ```
 ### Progress
 - [x] Initialize repository and write User Stories
-- [ ] Write tests for deposit, withdrawal
-- [ ] Pass for deposit, withdrawal
+- [x] Write tests for deposit, withdrawal
+- [x] Pass for deposit, withdrawal
 - [ ] Write tests for returning an account statement
 - [ ] Pass final test
