@@ -8,6 +8,8 @@ $ rspec
 $ irb/pry
 ```
 Use irb/pry to interact with code
+Instantiate account with key/value. e.g.
+account = Account.new(opening_balance: 100)
 
 ### User Stories
 ```

@@ -3,7 +3,7 @@ class Account
   DEFAULT_BALANCE = 0
 
   def initialize(**args)
-    @balance = args[:opening_balance] || DEFAULT_BALANCE
+    @balance = args[:balance] || DEFAULT_BALANCE
   end
 
 
