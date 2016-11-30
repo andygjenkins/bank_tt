@@ -11,7 +11,6 @@ class Account
     @account_history = []
   end
 
-
   def deposit(amount)
     update_account(amount)
     transaction = Transaction.new(amount: amount, type: :credit, balance: @balance)

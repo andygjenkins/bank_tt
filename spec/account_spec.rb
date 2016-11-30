@@ -5,7 +5,6 @@ describe Account do
   subject(:account_two) { described_class.new(balance: 100)}
   let(:printer) { double(:printer, print_statement: true)}
 
-
   describe "balance" do
     it "defaults to 0 if no opening balance is provided" do
       expect(account.instance_variable_get(:@balance)).to eq 0
@@ -52,7 +51,7 @@ describe Account do
     end
 
     it "should print out a string of previous transactions" do
-      expect(account.print_statement).to be(String)
+      expect(account.print_statement).to be_a(String)
     end
   end
 end
