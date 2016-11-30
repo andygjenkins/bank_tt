@@ -8,8 +8,8 @@ $ rspec
 $ irb/pry
 ```
 Use irb/pry to interact with code
-Instantiate account with key/value. e.g.
-account = Account.new(opening_balance: 100)
+Instantiate account with key/value if a different starting balance is required. e.g.
+account = Account.new(balance: 100)
 
 ### User Stories
 ```
@@ -29,5 +29,5 @@ I should be a able to see an account statement
 - [x] Initialize repository and write User Stories
 - [x] Write tests for deposit, withdrawal
 - [x] Pass for deposit, withdrawal
-- [ ] Write tests for returning an account statement
+- [x] Write tests for returning an account statement
 - [ ] Pass final test
